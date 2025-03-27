@@ -79,7 +79,6 @@ nav li a:hover {
   padding: 0;
   border-top: 2px black solid;
   border-bottom: 2px black solid;
-  display: flex;
 }
 
 #promotion h3 {
@@ -96,13 +95,13 @@ nav li a:hover {
   font-family: arsenica-variable, sans-serif;
   font-size: 1.2em;
   background-color: #451D4C;
-  padding: 15px 90px;
-  display: inline-block;
-  margin-bottom: 3%;
+  padding: 1rem 6rem;
   border-radius: 5px;
-  align-self: flex-end;
-  justify-self: center;
   border: none;
+  position: absolute;
+  bottom: 3%;
+  left: 40%;
+  text-align: center;
 }
 
 #promotion button:hover {
@@ -118,4 +117,72 @@ button a {
 
 button:hover a {
   color: #451D4C;
+}
+
+/* Main Section */
+
+main {
+  display: flex;
+  align-content: center;
+  width: 100%;
+  padding: 1.5rem 0;
+  flex-wrap: wrap;
+}
+
+.item {
+  flex: 0 1 350px;
+  flex-wrap: wrap;
+  margin: 0 1rem 0 1rem;
+  margin: 0 auto;
+}
+
+.item img{
+  display: block;
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.item h4 {
+  font-weight: 600;
+  font-size: 1.3rem;
+  margin: 5px 0 0;
+}
+
+.item p {
+  font-weight: 400;
+  font-size: 1rem;
+  margin-top: 10px;
+  line-height: 1.3rem;
+}
+
+.item p a {
+  color: black;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.item p a:hover {
+  color: #8C00B3;
+}
+
+/* Portfolio */
+
+#portfolio h2 {
+  margin: 0;
+  padding-left: 1rem;
+  font-family: mason-sans, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 3.5rem;
+  color: #451D4C;
+}
+
+#portfolio div{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#portfolio div img {
+  flex: 1 1 300px;
 }
