@@ -244,6 +244,30 @@ footer {
 }
 
 /* Media Queries */
+@media screen and (min-width: 768px) {
+	html {
+		font-size: 11px;
+	}
+	
+	/* Promotion */
+	
+	#promotion {
+		height: 500px;
+	}
+	
+	/* Portfolio */
+	
+	#portfolio h2 {
+		padding-top: 3%;
+	}
+}
+
+
+@media screen and (min-width: 1024px) {
+	html {
+		font-size: 12px;
+	}
+}
 
 @media screen and (min-width: 1920px) {
 	/* Promotion */
@@ -254,6 +278,10 @@ footer {
 }
 
 @media screen and (min-width: 2560px) {
+	html {
+  	font-size: 20px;
+	}
+	
 	/* Promotion */
 	
 	#promotion {
@@ -262,6 +290,9 @@ footer {
 }
 
 @media screen and (min-width: 3840px) {
+	html {
+  	font-size: 32px;
+	}
 	/* Promotion */
 	
 	#promotion {
