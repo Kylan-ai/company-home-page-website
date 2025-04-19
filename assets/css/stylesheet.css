@@ -79,6 +79,7 @@ nav li a:hover {
   padding: 0;
   border-top: 2px black solid;
   border-bottom: 2px black solid;
+	position: relative;
 }
 
 #promotion h3 {
@@ -98,9 +99,10 @@ nav li a:hover {
   padding: 1rem 6rem;
   border-radius: 5px;
   border: none;
+	left: 50%;
+	bottom: 3%;
+	transform: translate(-50%,0);
   position: absolute;
-  bottom: 3%;
-  left: 40%;
   text-align: center;
 }
 
@@ -185,4 +187,30 @@ main {
 
 #portfolio div img {
   flex: 1 1 300px;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 1920px) {
+	/* Promotion */
+	
+	#promotion {
+		height: 700px;
+	}
+}
+
+@media screen and (min-width: 2560px) {
+	/* Promotion */
+	
+	#promotion {
+		height: 1000px;
+	}
+}
+
+@media screen and (min-width: 3840px) {
+	/* Promotion */
+	
+	#promotion {
+		height: 1400px;
+	}
 }
