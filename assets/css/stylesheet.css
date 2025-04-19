@@ -3,6 +3,7 @@
 html {
   font-size: 16px;
   font-family: arsenica-variable, sans-serif;
+	border-bottom: 10px solid black;
 }
 
 body {
@@ -173,6 +174,10 @@ main {
 
 /* Portfolio */
 
+#portfolio {
+	position: relative;
+}
+
 #portfolio h2 {
   margin: 0;
   padding-left: 1rem;
@@ -185,11 +190,57 @@ main {
 
 #portfolio div{
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+	align-content: center;
+	align-items: stretch;
 }
 
-#portfolio div img {
-  flex: 1 1 300px;
+.trend {
+  flex: 0 1 20%;
+  flex-wrap: nowrap;
+  margin: 0 auto;
+}
+
+#portfolio div .trend img {
+	display: block;
+  aspect-ration: 1/1;
+	height: 100%;
+  width: 100%;
+  object-fit: cover;
+	flex: 1 1 10%;
+	border-top: 3px solid black;
+	border-bottom: 3px solid black;
+}
+
+/* Footer */
+
+footer {
+	width: 100%;
+	padding: 4% 0 6%;
+}
+
+#links {
+	float: left;
+	padding: 0 8% 0 3%;
+}
+
+#links ul {
+	list-style-type: none;
+}
+
+#links ul li a{
+	text-decoration: none;
+	color: black;
+	font-size: 1rem;
+	line-height: 1.5rem;
+}
+
+#links ul li a:hover{
+	color: #8C00B3;
+}
+
+#simple-about {
+	padding: 1% 5% 0 0;
 }
 
 /* Media Queries */
